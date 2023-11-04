@@ -6,58 +6,83 @@
 /****************************************************************/
 
 @font-face {
-    font-family: quesadilla;
-    src: url(../font/Cinzel-Regular.ttf);}
+        font-family: quesadilla;
+        src: url(../font/Cinzel-Regular.ttf);}
 @font-face {
-    font-family: textonormal;
-    src: url(../font/FaunaOne-Regular.ttf);}
+        font-family: textonormal;
+        src: url(../font/FaunaOne-Regular.ttf);}
 
 /* poner SIEMPRE que utilicemos un layout complejo */
 /* las medidas de ancho y alto se deben clacular del borde hacia dentro */
-/*{box-sizing:border-box;}*/
+*{box-sizing:border-box;}
 
 body   {background-image: url(../img/piedra.avif);
         font-family: textonormal;
         color: rgb(0, 0, 0);}
 
 #titulo {font-family: quesadilla;
-        font-size: 3.4em; /* em y rem son medidad exclusivas para texto, no usar px */
+        font-size: 3.2em; /* em y rem son medidad exclusivas para texto, no usar px */
         text-align: center;
         color: rgb(210,207,190);}
 
 #wrapper {width: 80%; /* Para width, la medida suele ser en porcentaje */
-        margin:0 auto;
+        margin: auto;
         padding: 3%;
+        background-image:url(../img/madera4.avif);
         /* padding-left: 20px;
         padding-right: 20px;
         padding-bottom: 20px; */
-        background-image:url(../img/madera4.avif);
+        /* background-size: cover; */
+        /* height: 90vh; */
         /* border-left: 20px solid rgb(210,207,190);
         border-right: 20px solid rgb(210,207,190); */}
+
+/* #wrapper div {padding: 4%;} */
 
 #cita {text-align: center;
         font-size: 1.3em;
         background-color:  rgb(227,206,125);
+        opacity: 0.8;
         border-left: 4px solid rgb(177,141,62);
         padding: 2%;
-        margin: 5%;}
+        margin: 3%;}
 
-img{width: 70%; height: 50%;
-        
-        border-radius: 5px solid;
+img {width: 70%;
+        border-radius: 7%;
         display: block;
         margin: auto;}
-
-#ul{list-style-image: url(../img/queso.png);}
+        /* float: right;forma de colocar la imagen pegada a la derecha */
+        /* es un 50% del espacio que hay en su bloque contenedor */
+        /* PONER SIEMPRE UN PORCENTAJE DEL ANCHO DEL BLOQUE CONTENEDOR */
+        /* margin:auto; solo funciona con bloques 
+        display: block;
+        border-radius: 10%;
+        padding: 5%;} */ 
 
 #ingredientes {background-color: rgb(210,207,190);
+        opacity: 0.8;
         padding: 2px 10px 10px;}
-
+        
 #receta {background-color: rgb(227,206,125);
+        opacity: 0.8;
         padding: 2px 10px 10px;}
-
+        
 #nutricional {background-color: rgb(210,207,190);
+        opacity: 0.8;
         padding: 2px 10px 10px;}
+        
 
-/* #dt {font-weight: bold;
-        font-variant: small-caps;} */
+ul{list-style: circle outside url(../img/icons8-cheese-18.png);}
+
+/* #dt {font-weight: bold; font-variant: small-caps;} */
+
+/******************* RESPONSIVIDAD: TOMAMOS CONTROL ********************/
+/********* VAMOS A HACER QUE LE WRAPPER PASE AL 100% EN MÓVILES ********/
+/************************** ATENCIÓN:MEDIA QUERY ***********************/ 
+
+@media only screen and (width<700px){
+        #wrapper {width:95%} /* redefino el ancho de wrapper para moviles */
+        img {width: 100%;}
+        cita {width: 100%;}
+        #titulo {margin: auto;}
+}
