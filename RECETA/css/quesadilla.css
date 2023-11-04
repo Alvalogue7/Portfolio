@@ -82,6 +82,7 @@ ul{list-style: circle outside url(../img/icons8-cheese-18.png);}
 
 @media only screen and (width<700px){
         #wrapper {width:95%} /* redefino el ancho de wrapper para moviles */
+        body {font-size: 0.9em;}
         img {width: 100%;}
         #cita {font-size: 1em;}
         #titulo {margin: auto;
