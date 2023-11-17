@@ -1,0 +1,78 @@
+/* external font */
+/********************** scenario **********************/
+
+@font-face {
+    font-family: todotexto;
+    src: url(../font/HelpMe.ttf);
+}
+
+@keyframes animation {
+    0%   {left:575px; top:230px;}
+    25%  {left:990px; top:230px;}
+    50%  {left:575px; top:230px;}
+    75%  {left:170px; top:230px;}
+    100% {left:575px; top:230px;}}
+
+body {background-color: black;
+    font-family: todotexto;}
+
+#scenario {width: 1000px;
+    height: 600px;
+    background-image: url(../img/dbd.jpg);
+    margin: auto;}
+
+#tv {width: 170px;
+    height: 140px;
+    /* border: 2px solid purple; */
+    position: absolute;
+    top: 150px;
+    left: 170px ;}
+#tvtexto {
+    font-size: 1.2em;
+    color: brown;
+    position: absolute;
+    top: 150px;
+    left: 40px ;}
+#clowntv {width: 170px;
+    height: 140px;
+    position: absolute;
+    top: 150px ;
+    left: 170px ;
+    visibility: hidden;}
+
+#nose {width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 225px;
+    left: 575px ;}
+#clownnose {width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 225px;
+    left: 575px ;
+    visibility: hidden;
+    animation-name: animation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;}
+#nosetext {font-size: 1.1em;
+    color: brown;
+    position: absolute;
+    top: 55px;
+    left: 150px ;}
+
+#hat {width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50px;
+    left: 490px ;}
+#hatimg {width: 1010px;
+    height: 600px;
+    position: absolute;
+    left: 125px;
+    visibility: hidden;}
+#hattext {font-size: 1.2em;
+    color:brown;
+    position: absolute;
+    top: 40px }
+
+
