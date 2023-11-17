@@ -1,4 +1,3 @@
-/* external font */
 /********************** scenario **********************/
 
 @font-face {
@@ -23,7 +22,6 @@ body {background-color: black;
 
 #tv {width: 170px;
     height: 140px;
-    /* border: 2px solid purple; */
     position: absolute;
     top: 150px;
     left: 170px ;}
