@@ -1,8 +1,8 @@
 /********************** scenario **********************/
 
 @font-face {
-    font-family: todotexto;
-    src: url(../font/HelpMe.ttf);
+    font-family: fulltext;
+    src: url(../font/who\ asks\ satan.ttf);
 }
 
 @keyframes animation {
@@ -12,8 +12,16 @@
     75%  {left:170px; top:230px;}
     100% {left:575px; top:230px;}}
 
+@keyframes hattext {
+        from {opacity:0;
+            color:black}
+        to {opacity:1;
+            color:brown}
+}
+
 body {background-color: black;
-    font-family: todotexto;}
+    font-family: fulltext;
+    font-size: 1.2em;}
 
 #scenario {width: 1000px;
     height: 600px;
@@ -23,14 +31,15 @@ body {background-color: black;
 #tv {width: 170px;
     height: 140px;
     position: absolute;
-    top: 150px;
-    left: 170px ;}
-#tvtexto {
+    border: 5px blue;
+    top: 200px;
+    left: 200px ;}
+#tvtext {
     font-size: 1.2em;
     color: brown;
     position: absolute;
-    top: 150px;
-    left: 40px ;}
+    top: 300px;
+    left: 185px ;}
 #clowntv {width: 170px;
     height: 140px;
     position: absolute;
@@ -55,8 +64,8 @@ body {background-color: black;
 #nosetext {font-size: 1.1em;
     color: brown;
     position: absolute;
-    top: 55px;
-    left: 150px ;}
+    top: 285px;
+    left: 700px ;}
 
 #hat {width: 50px;
     height: 50px;
@@ -69,8 +78,18 @@ body {background-color: black;
     left: 125px;
     visibility: hidden;}
 #hattext {font-size: 1.2em;
-    color:brown;
+    color:black;
     position: absolute;
-    top: 40px }
+    top: 40px;
+    left: 570px;
+    opacity:0;
+    animation-name: hattext; 
+    animation-duration: 9s;
+    animation-iteration-count: infinite; }
+
+#tvtext:hover {color:blueviolet;
+}
+#nosetext:hover {color:blueviolet;
+}
 
 

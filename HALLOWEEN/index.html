@@ -11,19 +11,16 @@
 <body>
     <div id="scenario">
 
-        <img id="clowntv" src="./img/clowntv.gif" alt="">
+        <img id="clowntv" src="./img/tvclown.gif" alt="">
         <div id="tv" onmouseover="show('clowntv');sound('clowntvsound')" onmouseout="hide('clowntv');silence('clowntvsound')">
-        <p id="tvtexto">Do you want to see the TV?</p>
         </div>
 
         <img id="clownnose" src="./img/clown-pennywise.gif" alt="">
         <div id="nose" onmouseover="show('clownnose');sound('clownnosesound')" onmouseout="hide('clownnose');silence('clownnosesound')">
-        <p id="nosetext">You smell it?</p>
         </div>
 
         <img id="hatimg" src="./img/scary-clown-red.gif" alt="">
         <div id="hat" onmouseover="show('hatimg');sound('hatsound')" onmouseout="hide('hatimg');silence('hatsound')">
-        <p id="hattext">JEJEJEJE</p>
         </div>
 
         <audio id="clowntvsound">
@@ -35,6 +32,11 @@
         <audio id="hatsound">
             <source src="./sound/evil-shreik-45560.mp3" type="audio/mp3">
         </audio>
+
+        <p id="tvtext">Do you want to see the TV?</p>
+        <p id="nosetext">You smell it?</p>
+        <p id="hattext">That hat is suspicious! JEJEJEJE</p>
+
 
     </div>
 </body>
