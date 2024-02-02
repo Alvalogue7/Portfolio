@@ -26,7 +26,8 @@ body {background-color: black;
 #scenario {width: 1000px;
     height: 600px;
     background-image: url(../img/dbd.jpg);
-    margin: auto;}
+    margin: auto;
+    position: relative;}
 
 #tv {width: 170px;
     height: 140px;

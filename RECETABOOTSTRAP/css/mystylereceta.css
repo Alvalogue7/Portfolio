@@ -1,0 +1,60 @@
+
+@font-face {
+    font-family: quesadilla;
+    src: url(../font/Cinzel-Regular.ttf);}
+@font-face {
+    font-family: normaltext;
+    src: url(../font/FaunaOne-Regular.ttf);}
+
+body  {background-image: url(../img/piedra.avif);}
+
+.font-style-text {
+    font-family: normaltext;
+}
+
+#titulo {font-family: quesadilla;
+    }
+
+/* sizing */
+.w-70 {width: 70%;}
+.w-80 {width: 80%;}
+.w-mb-90 {width: 90%;}
+.mt-6 {margin-top: 20px;}
+.mt-7 {margin-top: 25%;}
+
+.fs-titulo {font-size: 2.5em;}
+
+/* color */
+
+.text-mysecondary-color {
+    color: rgb(210,207,190);
+}
+
+.bg-myprimary-color {
+    background-color:  rgb(227,206,125);
+}
+
+.bg-mysecondary-color {
+    background-color: rgb(210,207,190);
+}
+
+.border-mytertiary {
+    border-color: rgb(177,141,62)!important;
+}
+
+.border-mysecondary {
+    border-color: rgb(210,207,190)!important;
+}
+
+#wrapper {
+    background-image:url(../img/madera4.avif);}
+
+#bg-transparent-table {background-color: transparent!important;}
+
+.table-mytertiary {background: rgb(177,141,62)!important;}
+
+
+ul{list-style: circle outside url(../img/icons8-cheese-18.png);}
+
+
+
