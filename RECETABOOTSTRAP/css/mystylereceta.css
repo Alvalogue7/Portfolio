@@ -1,4 +1,11 @@
+/****************************************************************/
+/*                  hoja de estilo quesadillab.html             */
+/*                  autor: Álvaro López Guerrero                */
+/*                  version: 1.0                                */
+/*                  fecha: 02/02/2024                           */
+/****************************************************************/
 
+/*               FONTS                  */
 @font-face {
     font-family: quesadilla;
     src: url(../font/Cinzel-Regular.ttf);}
@@ -6,16 +13,22 @@
     font-family: normaltext;
     src: url(../font/FaunaOne-Regular.ttf);}
 
+.font-style-text {
+    font-family: normaltext;}
+
+#titulo {font-family: quesadilla;}
+
+
+/*           GENERAL STYLE              */
+
 body  {background-image: url(../img/piedra.avif);}
 
-.font-style-text {
-    font-family: normaltext;
-}
+#wrapper {background-image:url(../img/madera4.avif);}
 
-#titulo {font-family: quesadilla;
-    }
 
-/* sizing */
+
+/*               SIZING                 */
+
 .w-70 {width: 70%;}
 .w-80 {width: 80%;}
 .w-mb-90 {width: 90%;}
@@ -24,32 +37,17 @@ body  {background-image: url(../img/piedra.avif);}
 
 .fs-titulo {font-size: 2.5em;}
 
-/* color */
+/*               COLOR                  */
 
-.text-mysecondary-color {
-    color: rgb(210,207,190);
-}
+.text-mysecondary-color {color: rgb(210,207,190);}
 
-.bg-myprimary-color {
-    background-color:  rgb(227,206,125);
-}
+.bg-myprimary-color {background-color:  rgb(227,206,125);}
 
-.bg-mysecondary-color {
-    background-color: rgb(210,207,190);
-}
+.bg-mysecondary-color {background-color: rgb(210,207,190);}
 
-.border-mytertiary {
-    border-color: rgb(177,141,62)!important;
-}
+.border-mytertiary {border-color: rgb(177,141,62)!important;}
 
-.border-mysecondary {
-    border-color: rgb(210,207,190)!important;
-}
-
-#wrapper {
-    background-image:url(../img/madera4.avif);}
-
-#bg-transparent-table {background-color: transparent!important;}
+.border-mysecondary {border-color: rgb(210,207,190)!important;}
 
 .table-mytertiary {background: rgb(177,141,62)!important;}
 
